@@ -1,4 +1,5 @@
 # 🏠 Airbnb Rio de Janeiro - Análise de Dados
+Projeto de análise de dados reais com foco em geração de insights para tomada de decisão no mercado de aluguel por temporada.
 
 ## 📌 Sobre o projeto
 
