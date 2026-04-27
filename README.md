@@ -1,19 +1,21 @@
-# 🏠 Análise de Dados do Airbnb - Rio de Janeiro
+# 🏠 Airbnb Rio de Janeiro - Análise de Dados
 
 ## 📌 Sobre o projeto
 
-Este projeto tem como objetivo analisar dados reais do Airbnb na cidade do Rio de Janeiro, buscando extrair insights relevantes sobre preços, tipos de imóveis e comportamento dos usuários.
+Este projeto realiza uma análise exploratória de dados reais do Airbnb na cidade do Rio de Janeiro, com o objetivo de entender padrões de preços, distribuição de imóveis e comportamento dos anúncios.
 
 Os dados foram obtidos através do projeto Inside Airbnb, que disponibiliza datasets públicos para análise.
 
 ---
 
-## 🎯 Objetivos
+## 🎯 Problema de Negócio
 
-* Identificar os bairros mais caros
-* Comparar tipos de imóveis (casa inteira vs quarto)
-* Analisar a relação entre preço e número de avaliações
-* Explorar padrões de comportamento dos anúncios
+O mercado de aluguel por temporada possui grande variação de preços e tipos de imóveis. Este projeto busca responder:
+
+* Quais regiões possuem os imóveis mais caros?
+* Qual tipo de hospedagem é mais vantajoso?
+* Existe relação entre preço e popularidade (reviews)?
+* Onde há maior concentração de imóveis?
 
 ---
 
@@ -23,14 +25,15 @@ Os dados foram obtidos através do projeto Inside Airbnb, que disponibiliza data
 * Pandas
 * Matplotlib
 * Seaborn
+* Folium (mapas interativos)
 
 ---
 
-## 📊 Principais análises
+## 📊 Principais Análises
 
 ### 📍 Preço médio por bairro
 
-Análise que mostra quais regiões possuem os maiores preços médios.
+Identificação dos bairros com maior valor médio de hospedagem.
 
 ### 🏡 Tipo de imóvel
 
@@ -40,9 +43,30 @@ Comparação entre:
 * Quarto privado
 * Quarto compartilhado
 
-### ⭐ Preço vs Avaliações
+### ⭐ Preço vs Número de Reviews
 
-Verifica se imóveis mais caros recebem mais ou menos avaliações.
+Análise da relação entre valor da diária e popularidade do anúncio.
+
+### 🗺️ Mapa interativo
+
+Visualização geográfica dos imóveis com base em latitude e longitude.
+
+---
+
+## 📌 Principais Insights
+
+* Bairros da Zona Sul apresentam os maiores preços médios
+* Imóveis inteiros possuem valores significativamente mais altos
+* A concentração de imóveis é maior em regiões turísticas
+* Não há forte correlação entre preço e número de reviews
+
+---
+
+## 📸 Visualizações
+
+### 🗺️ Mapa de imóveis
+
+![Mapa Airbnb](images/mapa_airbnb.png)
 
 ---
 
@@ -65,7 +89,7 @@ airbnb-rio-analysis/
 1. Clone o repositório:
 
 ```
-git clone https://github.com/seu-usuario/airbnb-rio-analysis
+git clone https://github.com/betopython-code/airbnb-rio-analises
 ```
 
 2. Instale as dependências:
@@ -82,14 +106,6 @@ jupyter notebook
 
 ---
 
-## 📌 Insights (exemplo)
-
-* Bairros centrais apresentam maior preço médio
-* Imóveis inteiros são significativamente mais caros
-* Não há forte correlação entre preço e número de reviews
-
----
-
 ## 📎 Fonte dos dados
 
 Inside Airbnb: http://insideairbnb.com/
@@ -99,3 +115,4 @@ Inside Airbnb: http://insideairbnb.com/
 ## 👨‍💻 Autor
 
 Roberto Ramos Pereira
+
